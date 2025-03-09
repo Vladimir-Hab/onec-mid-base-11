@@ -207,9 +207,15 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillChecking>ShowError</fillChecking>
     <choiceParameterLinks>
-      <name>Комментарий</name>
-      <field>Document.ЗаказПокупателя.Attribute.Комментарий</field>
+      <name>Отбор.Владелец</name>
+      <field>Document.ЗаказПокупателя.Attribute.Контрагент</field>
     </choiceParameterLinks>
+    <choiceParameters>
+      <name>Отбор.Владелец</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Catalog.КВ_КонтактноеЛицо.EmptyRef</value>
+      </value>
+    </choiceParameters>
     <linkByType>
       <field>Document.ЗаказПокупателя.Attribute.Контрагент</field>
     </linkByType>
